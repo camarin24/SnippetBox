@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>App</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js');
+    require('./build/inline.bundle.js');
+    require('./build/polyfills.bundle.js');
+    require('./build/styles.bundle.js');
+    require('./build/vendor.bundle.js');
+    require('./build/main.bundle.js');
+  </script>
+</html>
