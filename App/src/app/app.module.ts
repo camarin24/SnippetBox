@@ -2,6 +2,8 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { routing, appRoutingProviders  } from './app.routes';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {
   MdAutocompleteModule,
@@ -34,15 +36,23 @@ import {
   MdTableModule,
   MdTabsModule,
   MdToolbarModule,
-  MdTooltipModule,
+  MdTooltipModule
 } from '@angular/material';
+
+
 import {HttpModule} from '@angular/http';
 import {CdkTableModule} from '@angular/cdk';
+
+
 import { AppComponent } from './app.component';
-import {SidenavFabExample } from '../Components/Menu/menu.component';
+import {HomeComponent } from './../Components/Home/home.component';
+import {MenuprofileComponent } from './../Components/MenuProfile/menuProfile.component';
+
 @NgModule({
   declarations: [
-    AppComponent,SidenavFabExample
+    AppComponent,
+    HomeComponent,
+    MenuprofileComponent
   ],
   imports: [
     BrowserModule,
@@ -52,8 +62,16 @@ import {SidenavFabExample } from '../Components/Menu/menu.component';
     MdSidenavModule,
     MdNativeDateModule,
     ReactiveFormsModule,
+    routing,
+    MdIconModule,
+    MdToolbarModule,
+    MdButtonModule,
+    MdButtonToggleModule,
+    MdListModule,
+    MdCardModule,
+    MdMenuModule
   ],
-  providers: [],
-  bootstrap: [SidenavFabExample]
+  providers: [appRoutingProviders],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
