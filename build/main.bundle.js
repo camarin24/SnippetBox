@@ -148,7 +148,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<md-sidenav-container class=\"example-container\">\n  <md-sidenav #sidenav class=\"example-sidenav\" mode=\"side\">\n    <menu-profile></menu-profile>\n    <md-nav-list>\n      <div *ngFor=\"let menu of Menu\">\n        <h3 md-subheader>{{menu.Segmento}}</h3>\n        <md-list-item *ngFor=\"let item of menu.Items\">\n          <md-icon md-list-icon>{{item.Icon}}</md-icon>\n          <a md-line href=\"{{item.Url}}\"> {{ item.Title }} </a>\n        </md-list-item>\n      </div>\n    </md-nav-list>\n  </md-sidenav>\n\n  <md-toolbar color=\"primary\">\n    <button md-icon-button (click)=\"sidenav.toggle()\">\n      <md-icon class=\"md-24\" >menu</md-icon>\n    </button>\n  </md-toolbar>\n\n  <router-outlet></router-outlet>\n</md-sidenav-container>\n"
+module.exports = "<md-sidenav-container class=\"example-container\">\r\n  <md-sidenav #sidenav class=\"example-sidenav\" mode=\"side\">\r\n    <menu-profile></menu-profile>\r\n    <md-nav-list>\r\n      <div *ngFor=\"let menu of Menu\">\r\n        <h3 md-subheader>{{menu.Segmento}}</h3>\r\n        <md-list-item *ngFor=\"let item of menu.Items\">\r\n          <md-icon md-list-icon>{{item.Icon}}</md-icon>\r\n          <a md-line href=\"{{item.Url}}\"> {{ item.Title }} </a>\r\n        </md-list-item>\r\n      </div>\r\n    </md-nav-list>\r\n  </md-sidenav>\r\n\r\n  <md-toolbar color=\"primary\">\r\n    <button md-icon-button (click)=\"sidenav.toggle()\">\r\n      <md-icon class=\"md-24\" >menu</md-icon>\r\n    </button>\r\n  </md-toolbar>\r\n\r\n  <router-outlet></router-outlet>\r\n</md-sidenav-container>\r\n"
 
 /***/ }),
 
